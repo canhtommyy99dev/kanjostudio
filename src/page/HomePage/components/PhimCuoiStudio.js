@@ -1,7 +1,23 @@
 import React, { Component } from "react";
-import TitleAboutStudio from "./components-mini/title_about_Studio";
+import axios from "axios";
+import TitleYoutubeLink from "./components-mini/title_youtube_link";
 
 class PhimCuoiStudio extends Component {
+  state = {
+    items: [],
+  };
+
+  componentDidMount() {
+    axios
+      .get(
+        `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDAO1fz1KkRm6VdRQ2gKOjJJTfxayzaRa8&channelId=UChMesj8ABwJ6PeN6WoFpkdw&part=snippet,id&order=date&maxResults=8`
+      )
+      .then((res) => {
+        const items = res.data["items"];
+        this.setState({ items });
+      });
+  }
+
   render() {
     return (
       <div className="container-xxl py-5">
@@ -13,22 +29,15 @@ class PhimCuoiStudio extends Component {
           </div>
           <hr />
           <div className="row g-4">
-            <TitleAboutStudio
-              image="img/image_category/phim_truong.jpg"
-              title="ALBUM ẢNH CƯỚI ĐẸP"
-            />
-            <TitleAboutStudio
-              image="img/image_category/mackup.jpg"
-              title="TRANG ĐIỂM CÔ DÂU"
-            />
-            <TitleAboutStudio
-              image="img/image_category/vay_cuoi_cao_cap.jpg"
-              title="VÁY CƯỚI CAO CẤP"
-            />
-            <TitleAboutStudio
-              image="img/image_category/family.jpg"
-              title="GIA ĐÌNH HẠNH PHÚC"
-            />
+            <ul></ul>
+            {this.state.items.map((item) => (
+              <TitleYoutubeLink
+                key={item.etag}
+                image={item.snippet.thumbnails.high.url}
+                title={item.snippet.title}
+                link={`https://youtube.com/watch?v=${item.id.videoId}`}
+              />
+            ))}
           </div>
         </div>
       </div>

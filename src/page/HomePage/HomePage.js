@@ -4,6 +4,7 @@ import AboutInStudio from "./components/AboutInStudio";
 import Carousel from "./components/Carousel";
 import QuickWizard from "./components/QuickWizard";
 import PhimCuoiStudio from "./components/PhimCuoiStudio";
+import KinhNghiemCuoi from "./components/KinhNghiemCuoi";
 
 class HomePage extends Component {
   render() {
@@ -16,6 +17,7 @@ class HomePage extends Component {
         <QuickWizard />
         <AboutInStudio />
         <PhimCuoiStudio />
+        <KinhNghiemCuoi />
       </div>
     );
   }

@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -26,23 +26,33 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
             {/* trang chủ */}
-            <a href="/" className="nav-item nav-link active">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                ["nav-item nav-link", isActive ? "active" : null]
+                  .filter(Boolean)
+                  .join(" ")
+              }
+            >
               Trang Chủ
-            </a>
+            </NavLink>
 
             {/* trang điểm */}
-            <a href="/trang_diem" className="nav-item nav-link">
+            <NavLink
+              to="/trang_diem"
+              className={({ isActive }) =>
+                ["nav-item nav-link", isActive ? "active" : null]
+                  .filter(Boolean)
+                  .join(" ")
+              }
+            >
               Trang Điểm
-            </a>
-            {/*ambum */}
+            </NavLink>
+            {/* ambum */}
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
+              <NavLink to="/album" className="nav-link dropdown-toggle">
                 Album
-              </a>
+              </NavLink>
               <div className="dropdown-menu bg-light border-0 m-0">
                 <a href="/in_door_studio" className="dropdown-item">
                   Indoor Studio
@@ -63,34 +73,47 @@ class Navbar extends Component {
             </div>
             {/* video */}
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Video
-              </a>
+              <NavLink to="/video" className="nav-link dropdown-toggle">
+                Videos
+              </NavLink>
               <div className="dropdown-menu bg-light border-0 m-0">
-                <a href="/pre_wedding" className="dropdown-item">
+                <NavLink
+                  to="/pre_wedding"
+                  className={({ isActive }) =>
+                    ["dropdown-item", isActive ? "active" : null]
+                      .filter(Boolean)
+                      .join(" ")
+                  }
+                >
                   Pre-Wedding
-                </a>
-                <a href="/wedding_day" className="dropdown-item">
+                </NavLink>
+                <NavLink
+                  to="/wedding_day"
+                  className={({ isActive }) =>
+                    ["dropdown-item", isActive ? "active" : null]
+                      .filter(Boolean)
+                      .join(" ")
+                  }
+                >
                   Wedding Day
-                </a>
-                <a href="/vlog_ky_niem_cuoi" className="dropdown-item">
+                </NavLink>
+                <NavLink
+                  to="/vlog_ky_niem_cuoi"
+                  className={({ isActive }) =>
+                    ["dropdown-item", isActive ? "active" : null]
+                      .filter(Boolean)
+                      .join(" ")
+                  }
+                >
                   Vlog Ký niệm cưới
-                </a>
+                </NavLink>
               </div>
             </div>
             {/* Bảng Giá */}
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
+              <NavLink to="/service" className="nav-link dropdown-toggle">
                 Bảng Giá
-              </a>
+              </NavLink>
               <div className="dropdown-menu bg-light border-0 m-0">
                 <a href="feature.html" className="dropdown-item">
                   Chụp Ảnh Cưới
@@ -123,13 +146,9 @@ class Navbar extends Component {
             </div>
             {/* video */}
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
+              <NavLink to="/category" className="nav-link dropdown-toggle">
                 Danh Mục
-              </a>
+              </NavLink>
               <div className="dropdown-menu bg-light border-0 m-0">
                 <a href="feature.html" className="dropdown-item">
                   Chụp Ảnh Cưới
@@ -155,12 +174,26 @@ class Navbar extends Component {
               </div>
             </div>
             {/*about studio*/}
-            <a href="about.html" className="nav-item nav-link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                ["nav-item nav-link", isActive ? "active" : null]
+                  .filter(Boolean)
+                  .join(" ")
+              }
+            >
               Kanjo Studio
-            </a>
-            <a href="contact.html" className="nav-item nav-link">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                ["nav-item nav-link", isActive ? "active" : null]
+                  .filter(Boolean)
+                  .join(" ")
+              }
+            >
               Liên Hệ
-            </a>
+            </NavLink>
           </div>
         </div>
         <a

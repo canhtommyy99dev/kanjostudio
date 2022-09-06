@@ -12,6 +12,7 @@ class KinhNghiemCuoi extends Component {
           </div>
           <hr />
           <TitleChuyenCuoi
+            image_link="img/image_category/album_Show.jpg"
             url="https://alexmedia.vn"
             title="XU HƯỚNG CHỤP ẢNH CƯỚI HÀN QUỐC ĐẸP TRONG PHÒNG STUDIO 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"
@@ -19,6 +20,7 @@ class KinhNghiemCuoi extends Component {
           />
           <br />
           <TitleChuyenCuoi
+            image_link="img/image_category/album_Show2.jpg"
             url="https://alexmedia.vn"
             title="ALBUM CHỤP ẢNH CƯỚI PHONG CÁCH HÀN QUỐC MỚI NHẤT 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"
@@ -26,6 +28,7 @@ class KinhNghiemCuoi extends Component {
           />
           <br />
           <TitleChuyenCuoi
+            image_link="img/image_category/album_Show3.jpg"
             url="https://alexmedia.vn"
             title="PHÓNG SỰ CƯỚI : BẢNG GIÁ CHỤP ẢNH & QUAY VIDEO PHÓNG SỰ CƯỚI 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"

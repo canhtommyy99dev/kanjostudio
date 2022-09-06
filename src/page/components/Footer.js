@@ -21,8 +21,9 @@ class Footer extends Component {
                 Kanjo Studio
               </h1>
               <p>
-                Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                erat ipsum et lorem et sit, sed stet lorem sit clita
+                Chụp ảnh cưới chuyên nghiệp . Đào tạo nhiếp ảnh chuyên nghiệp .
+                Đào tạo makeup chuyên nghiệp . Thương hiệu váy cao cấp . Chụp
+                Ảnh Baby, Gia Đình
               </p>
               <div className="d-flex pt-2">
                 <a className="btn btn-square me-1" href="">
@@ -40,27 +41,27 @@ class Footer extends Component {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h5 className="text-light mb-4">Address</h5>
+              <h5 className="text-light mb-4">Địa Chỉ</h5>
               <p>
                 <i className="fa fa-map-marker-alt me-3" />
-                123 Street, New York, USA
+                544 Phố Văn Giang, Ecopark, Hưng Yên
               </p>
               <p>
                 <i className="fa fa-phone-alt me-3" />
-                +012 345 67890
+                0983 318 797
               </p>
               <p>
                 <i className="fa fa-envelope me-3" />
-                info@example.com
+                kanjodata@kanjostudio.com
               </p>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h5 className="text-light mb-4">Quick Links</h5>
-              <a className="btn btn-link" href="">
-                About Us
+              <h5 className="text-light mb-4">Truy Cập Nhanh</h5>
+              <a className="btn btn-link" href="/about_page">
+                Kanjo Studio
               </a>
-              <a className="btn btn-link" href="">
-                Contact Us
+              <a className="btn btn-link" href="/contact">
+                Liên Hệ
               </a>
               <a className="btn btn-link" href="">
                 Our Services
@@ -71,26 +72,6 @@ class Footer extends Component {
               <a className="btn btn-link" href="">
                 Support
               </a>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h5 className="text-light mb-4">Newsletter</h5>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-              <div
-                className="position-relative mx-auto"
-                style={{ maxWidth: 400 }}
-              >
-                <input
-                  className="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Your email"
-                />
-                <button
-                  type="button"
-                  className="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                >
-                  SignUp
-                </button>
-              </div>
             </div>
           </div>
         </div>

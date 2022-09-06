@@ -26,7 +26,7 @@ class TitleChuyenCuoi extends Component {
           >
             <img
               className="position-absolute w-100 h-100"
-              src="img/feature.jpg"
+              src={this.props.image_link}
               alt=""
               style={{ objectFit: "cover" }}
             />

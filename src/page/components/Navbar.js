@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import PageHeader from "./TilteCS";
 
 class Navbar extends Component {
   render() {
@@ -51,99 +50,113 @@ class Navbar extends Component {
                 Trang Điểm
               </NavLink>
               {/* ambum */}
-              <div className="nav-item dropdown">
-                <NavLink to="/album" className="nav-link dropdown-toggle">
-                  Album
-                </NavLink>
-                <div className="dropdown-menu bg-light border-0 m-0">
-                  <a href="/in_door_studio" className="dropdown-item">
-                    Indoor Studio
-                  </a>
-                  <a href="/phim_truong" className="dropdown-item">
-                    Phim Trường
-                  </a>
-                  <a href="/phong_su_cuoi" className="dropdown-item">
-                    Phóng Sự Cưới
-                  </a>
-                  <a href="/ngoai_canh" className="dropdown-item">
-                    Ngoại cảnh
-                  </a>
-                  <a href="/ha_noi" className="dropdown-item">
-                    Hà Nội
-                  </a>
-                </div>
-              </div>
+              <NavLink
+                to="/album"
+                className={({ isActive }) =>
+                  ["nav-item nav-link", isActive ? "active" : null]
+                    .filter(Boolean)
+                    .join(" ")
+                }
+              >
+                Album
+              </NavLink>
               {/* video */}
-              <div className="nav-item dropdown">
-                <NavLink to="/video" className="nav-link dropdown-toggle">
-                  Videos
-                </NavLink>
-                <div className="dropdown-menu bg-light border-0 m-0">
-                  <NavLink
-                    to="/pre_wedding"
-                    className={({ isActive }) =>
-                      ["dropdown-item", isActive ? "active" : null]
-                        .filter(Boolean)
-                        .join(" ")
-                    }
-                  >
-                    Pre-Wedding
-                  </NavLink>
-                  <NavLink
-                    to="/wedding_day"
-                    className={({ isActive }) =>
-                      ["dropdown-item", isActive ? "active" : null]
-                        .filter(Boolean)
-                        .join(" ")
-                    }
-                  >
-                    Wedding Day
-                  </NavLink>
-                  <NavLink
-                    to="/vlog_ky_niem_cuoi"
-                    className={({ isActive }) =>
-                      ["dropdown-item", isActive ? "active" : null]
-                        .filter(Boolean)
-                        .join(" ")
-                    }
-                  >
-                    Vlog Ký niệm cưới
-                  </NavLink>
-                </div>
-              </div>
+              <NavLink
+                to="/video"
+                className={({ isActive }) =>
+                  ["nav-item nav-link", isActive ? "active" : null]
+                    .filter(Boolean)
+                    .join(" ")
+                }
+              >
+                Videos
+              </NavLink>
               {/* Bảng Giá */}
               <div className="nav-item dropdown">
                 <NavLink to="/service" className="nav-link dropdown-toggle">
                   Bảng Giá
                 </NavLink>
                 <div className="dropdown-menu bg-light border-0 m-0">
-                  <a href="feature.html" className="dropdown-item">
+                  <NavLink
+                    to="/bang_gia_chup_anh_cuoi"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
                     Chụp Ảnh Cưới
-                  </a>
-                  <a href="appointment.html" className="dropdown-item">
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_doanh_nhan"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
                     Chụp Ảnh Doanh Nhân
-                  </a>
-                  <a href="team.html" className="dropdown-item">
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_cho_be"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
                     Chụp Ảnh Cho Bé
-                  </a>
-                  <a href="testimonial.html" className="dropdown-item">
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_gia_dinh"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
                     Chụp Ảnh Gia Đình
-                  </a>
-                  <a href="404.html" className="dropdown-item">
-                    Chụp ảnh thời trang
-                  </a>
-                  <a href="404.html" className="dropdown-item">
-                    Chụp ảnh váy cưới
-                  </a>
-                  <a href="404.html" className="dropdown-item">
-                    Phim Trường Studio Kanjo
-                  </a>{" "}
-                  <a href="404.html" className="dropdown-item">
-                    VIP Ngoại cảnh
-                  </a>
-                  <a href="404.html" className="dropdown-item">
-                    Hà Nội
-                  </a>
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_thoi_trang"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
+                    Chụp Ảnh Thời Trang
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_vay_cuoi"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
+                    Chụp Ảnh Váy Cưới
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_phim_truong"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
+                    Phim Trường
+                  </NavLink>
+                  <NavLink
+                    to="/bang_gia_chup_anh_vip_ngoai_anh"
+                    className={({ isActive }) =>
+                      ["dropdown-item", isActive ? "active" : null]
+                        .filter(Boolean)
+                        .join(" ")
+                    }
+                  >
+                    VIP Ngoại Ảnh
+                  </NavLink>
                 </div>
               </div>
               {/* video */}

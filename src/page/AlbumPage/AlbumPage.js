@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import PageHeader from "../components/TilteCS";
-import { Helmet } from "react-helmet";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
+import { Helmet } from "react-helmet";
 import { BrowserView, MobileView } from "react-device-detect";
+import PageHeader from "../components/TilteCS";
 
-class TrangDiem extends Component {
+class AlbumPage extends Component {
   state = {
     itemData: [],
   };
@@ -92,10 +92,11 @@ class TrangDiem extends Component {
   render() {
     return (
       <div>
+        {" "}
         <Helmet>
-          <title>Trang điểm</title>
+          <title>Album Kanjo Studio</title>
         </Helmet>
-        <PageHeader title="Trang Điểm" />
+        <PageHeader title="Album Kanjo Studio" />
         <div className="container-xxl py-5">
           <BrowserView>
             <ImageList variant="quilted" cols={4}>
@@ -161,4 +162,4 @@ class TrangDiem extends Component {
   }
 }
 
-export default TrangDiem;
+export default AlbumPage;

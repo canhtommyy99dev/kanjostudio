@@ -18,23 +18,23 @@ class Carousel extends Component {
           <div className="carousel-inner">
             <ImageLinkSlide
               carousel="carousel-item active"
-              link_image="img/slide_background/slide1.jpg"
+              link_image="/img/slide_background/slide1.jpg"
             />
             <ImageLinkSlide
               carousel="carousel-item"
-              link_image="img/slide_background/slide2.jpg"
+              link_image="/img/slide_background/slide2.jpg"
             />
             <ImageLinkSlide
               carousel="carousel-item"
-              link_image="img/slide_background/slide3.jpg"
+              link_image="/img/slide_background/slide3.jpg"
             />
             <ImageLinkSlide
               carousel="carousel-item"
-              link_image="img/slide_background/slide4.jpg"
+              link_image="/img/slide_background/slide4.jpg"
             />
             <ImageLinkSlide
               carousel="carousel-item"
-              link_image="img/slide_background/slide5.jpg"
+              link_image="/img/slide_background/slide5.jpg"
             />
           </div>
           <button

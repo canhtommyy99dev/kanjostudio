@@ -47,7 +47,7 @@ class AboutFor extends Component {
               >
                 <img
                   className="position-absolute w-100 h-100"
-                  src="img/image_category/cate_gory.jpg"
+                  src="/img/image_category/cate_gory.jpg"
                   alt=""
                   style={{ objectFit: "cover" }}
                 />

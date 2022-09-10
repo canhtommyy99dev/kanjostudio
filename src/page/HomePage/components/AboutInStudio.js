@@ -19,19 +19,19 @@ class AboutInStudio extends Component {
           <hr />
           <div className="row g-4">
             <TitleAboutStudio
-              image="img/image_category/phim_truong.jpg"
+              image="/img/image_category/phim_truong.jpg"
               title="ALBUM ẢNH CƯỚI ĐẸP"
             />
             <TitleAboutStudio
-              image="img/image_category/mackup.jpg"
+              image="/img/image_category/mackup.jpg"
               title="TRANG ĐIỂM CÔ DÂU"
             />
             <TitleAboutStudio
-              image="img/image_category/vay_cuoi_cao_cap.jpg"
+              image="/img/image_category/vay_cuoi_cao_cap.jpg"
               title="VÁY CƯỚI CAO CẤP"
             />
             <TitleAboutStudio
-              image="img/image_category/family.jpg"
+              image="/img/image_category/family.jpg"
               title="GIA ĐÌNH HẠNH PHÚC"
             />
           </div>

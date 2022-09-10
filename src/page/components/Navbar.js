@@ -160,7 +160,7 @@ class Navbar extends Component {
                 </div>
               </div>
               {/* video */}
-              <div className="nav-item dropdown">
+              {/* <div className="nav-item dropdown">
                 <NavLink to="/category" className="nav-link dropdown-toggle">
                   Danh Mục
                 </NavLink>
@@ -187,7 +187,7 @@ class Navbar extends Component {
                     Chụp ảnh áo dài
                   </a>
                 </div>
-              </div>
+              </div> */}
               {/*about studio*/}
               <NavLink
                 to="/about_page"

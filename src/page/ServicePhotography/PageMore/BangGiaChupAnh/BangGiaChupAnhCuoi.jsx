@@ -46,6 +46,33 @@ class BangGiaChupAnhCuoi extends Component {
           descriptions="Giai đoạn chụp album cưới Hàn Quốc trong studio: Xu hướng chụp ảnh cưới phong cách Hàn Quốc và chụp hình cưới trong studio luôn mang lại cho bạn sự thuận tiện nhưng quan trọng hơn hết đây chính là phong cách ảnh cưới chủ đạo của Kanjo Studio."
           descriptions1="Giai đoạn chụp ảnh Lễ Cưới ( lễ rước dâu ) + Tiệc ngày cưới ( Tiệc nhà hàng ):Sau khi đã hiểu hơn về các phong cách trang điểm cô dâu tại Tony Wedding cũng như ưng ý với cách làm việc chuyên nghiệp thì bạn hoàn toàn có thể đặt niềm tin của mình vào Ngày cưới của bạn cứ để ekip của Tony lo nhé. "
         />
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div className="text-center mx-auto" style={{ maxWidth: 1500 }}>
+              <h1 className="display-6 mb-5">
+                <img
+                  src="/img/image_category/bang1.jpg"
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "600px",
+                  }}
+                />
+                <br />
+                <hr />
+                <br />
+                <img
+                  src="/img/image_category/bang9.jpg"
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "600px",
+                  }}
+                />
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

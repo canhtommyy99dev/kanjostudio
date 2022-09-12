@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutPage from "./page/AboutPage/AboutPage";
 import AlbumPage from "./page/AlbumPage/AlbumPage";
 import ContactPage from "./page/ContactPage/ContactPage";
+import DemoDevApplication from "./page/DemoDev/demodev";
 import HomePage from "./page/HomePage/HomePage";
 import BangChupEmBe from "./page/ServicePhotography/PageMore/BangGiaChupAnh/BangChupEmBe";
 import BangGiaChupAnhCuoi from "./page/ServicePhotography/PageMore/BangGiaChupAnh/BangGiaChupAnhCuoi";
@@ -57,6 +58,7 @@ class RouterLink extends Component {
           path="/bang_gia_chup_anh_vay_cuoi"
           element={<BangGiaChupVayCuoi />}
         />
+        <Route path="/demo_app_in_wordpress" element={<DemoDevApplication />} />
       </Routes>
     );
   }

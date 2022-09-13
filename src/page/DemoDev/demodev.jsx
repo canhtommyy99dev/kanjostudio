@@ -11,11 +11,10 @@ class DemoDevApplication extends Component {
   };
   componentDidMount() {
     axios
-      .get(`https://kanjostudio.com/wp/wp-json/wp/v2/pages/2`)
+      .get(`https://kanjostudio.com/wp/wp-json/wp/v2/pages/95`)
       .then((res) => {
         const rendered = res.data["content"]["rendered"];
         const title = res.data["title"]["rendered"];
-        // const helmet = Helmet.renderStatic();
         this.setState({ rendered });
         this.setState({ title });
       });
@@ -27,7 +26,7 @@ class DemoDevApplication extends Component {
         <Helmet>
           <title>{`${this.state.title} | Kanjo Studio`}</title>
         </Helmet>
-        <PageHeader title="Demo App Kanjo Studio" />
+        <PageHeader title={this.state.title} />
 
         <div className="container-xxl py-5">
           <div className="container">

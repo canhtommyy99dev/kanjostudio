@@ -63,14 +63,11 @@ class Footer extends Component {
               <a className="btn btn-link" href="/contact">
                 Liên Hệ
               </a>
-              <a className="btn btn-link" href="">
-                Our Services
+              <a className="btn btn-link" href="/album">
+                Album
               </a>
-              <a className="btn btn-link" href="">
-                Terms &amp; Condition
-              </a>
-              <a className="btn btn-link" href="">
-                Support
+              <a className="btn btn-link" href="/video">
+                Videos
               </a>
             </div>
           </div>

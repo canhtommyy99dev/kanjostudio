@@ -13,7 +13,7 @@ class KinhNghiemCuoi extends Component {
           <hr />
           <TitleChuyenCuoi
             image_link="/img/image_category/album_Show.jpg"
-            url="https://alexmedia.vn"
+            url="/bang_gia_chup_anh_phim_truong"
             title="XU HƯỚNG CHỤP ẢNH CƯỚI HÀN QUỐC ĐẸP TRONG PHÒNG STUDIO 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"
             description1="Có một điều mà Kanjo Studio có thể khẳng định rằng chụp ảnh cưới Hàn Quốc sẽ luôn là sự lựa chọn hàng đầu dành cho các 8/10 cặp đôi sắp cưới"
@@ -21,7 +21,7 @@ class KinhNghiemCuoi extends Component {
           <br />
           <TitleChuyenCuoi
             image_link="/img/image_category/album_Show2.jpg"
-            url="https://alexmedia.vn"
+            url="/album"
             title="ALBUM CHỤP ẢNH CƯỚI PHONG CÁCH HÀN QUỐC MỚI NHẤT 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"
             description1="Các cặp đôi ngày nay có xu hướng chọn phong cách chụp ảnh cưới trong studio vừa đẹp, vừa tiết kiệm mà lại còn không bị `sến` theo thời gian."
@@ -29,7 +29,7 @@ class KinhNghiemCuoi extends Component {
           <br />
           <TitleChuyenCuoi
             image_link="/img/image_category/album_Show3.jpg"
-            url="https://alexmedia.vn"
+            url="/bang_gia_chup_anh_cuoi"
             title="PHÓNG SỰ CƯỚI : BẢNG GIÁ CHỤP ẢNH & QUAY VIDEO PHÓNG SỰ CƯỚI 2022"
             description="CHUYÊN MỤC : DỊCH VỤ CƯỚI,KINH NGHIỆM CHỤP ẢNH CƯỚI,KINH NGHIỆM CƯỚI,PHONG CÁCH CHỤP ẢNH CƯỚI"
             description1="Có một điều mà Kanjo Studio có thể khẳng định rằng chụp ảnh cưới Hàn Quốc sẽ luôn là sự lựa chọn hàng đầu dành cho các 8/10 cặp đôi sắp cưới"
